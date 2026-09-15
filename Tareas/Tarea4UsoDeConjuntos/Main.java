@@ -10,7 +10,7 @@ public class Main {
         Steve.conseguirMateriales(Juego.inventario);
         Steve.conseguirCrafteos(Juego.crafteosND);
         for(Crafteo c : Steve.crafteosJ) {
-            System.out.println(c.getNombre());
+            System.out.println(c.getNombre()+ " Los materiales necesarios para craftear son: " +c.getReceta());
 
         }
 
