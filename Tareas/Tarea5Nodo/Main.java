@@ -3,22 +3,22 @@ public class Main {
     public static void main(String[] args) {
         Nodo<String> head = new Nodo("Al", new Nodo("B", new Nodo("C", new Nodo("De", new Nodo("Mc", new Nodo("Zi", null))))));
         Nodo<String> cursor = head;
-        String ref = "De";
 
         System.out.println("Imprirmir todo el Nodo:");
         imprimirNodo(cursor);
 
         System.out.println("\nImprimir el primer dato del Nodo: [" + cursor.getDato()+"]\n");
 
-        String ref2 = "Zi";
-        while(!cursor.getDato().equals(ref2)){
+        String ref = "Zi";
+        while(!cursor.getDato().equals(ref)){
             cursor = cursor.getSiguiente();
 
         }
         System.out.println("Imprimir el estado completo del ultimo nodo: ["+cursor.getDato()+"] ["+cursor.getSiguiente()+"]\n");
         cursor = head;
 
-        while(!cursor.getDato().equals(ref)){
+        String ref2 = "De";
+        while(!cursor.getDato().equals(ref2)){
             cursor = cursor.getSiguiente();
 
         }
@@ -27,7 +27,7 @@ public class Main {
         System.out.println("Imprimir el nuevo nodo Fe: ");
         imprimirNodo(cursor);
 
-        while(!cursor.getDato().equals(ref2)) {
+        while(!cursor.getDato().equals(ref)) {
             cursor = cursor.getSiguiente();
 
         }
